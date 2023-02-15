@@ -1,0 +1,364 @@
+                        MONTHLY (new) SUMMARY DATA
+                        --------------------------
+ 
+         LOGICAL RECORD LENGTH - 242 CHARACTERS
+ 
+THE FOLLOWING PARAMETER LIST AND FORMAT MAY BE USED TO READ A LOGICAL RECORD:
+ 
+      CHARACTER*5 BKIDN
+      READ (8,10) IDATE,BKIDN,TMEAN,TMAX,TMIN,HMAX,RMINL,CTMEAN,APTMAX,
+     *WCMIN,HMAXAPT,WCLMINL,RPCP,EPCP,CPCP,EPCPMX,AHS,AVP,APET,AVPD,
+     *RSV1,TRAD,AMAXTH,AMINRH,IHDD,ICDD,IGDD,NRADV,IRSV2,NOBS,NOBSP,
+     *N6HE,NPMXMN,NMX,NMN,MXDAT,MNDAT,NDPR,NDTPR,NMAPT,NMWC,NSV,NVPT,
+     *NPET,NMXRH,NMNRH,MXAPTD,MNWCD,MXPCPD,NDAYS
+   10 FORMAT(1X,I6,A5,10F5.1,3F7.1,F5.1,4F5.2,F6.2,F5.2,2F5.0,3I5,I3,4I4,
+     *3I3,2I8,9I3,3I8,I3)
+ 
+THE FOLLOWING FIELDS ARE AVAILABLE:
+
+    0.  BLANK - 1X
+
+    1.  IDATE-YEAR AND MONTH OF DATA, IN FORM YYYYMM.
+ 
+        FORMAT - I6
+ 
+    2.  BKIDN- 5 CHARACTER STATION IDENTIFIER. THE  5 CHARACTERS
+        ARE THE WMO BLOCK STATION NUMBER WHEN ASSIGNED OR 99 FOLLOWED
+        BY THE 3 CHARACTER AIRWAYS CALLSIGN WHEN NO WMO BLOCK STATION
+        HAS BEEN ASSIGNED.
+ 
+        FORMAT - A5
+ 
+    3.  TMEAN - AVERAGE DAILY MEAN TEMPERATURE COMPUTED FROM ALL
+        PAIRED DAILY MAXIMUM AND MINIMUM TEMPERATURES.
+ 
+        UNITS - DEGREES CELSIUS.
+        FORMAT - F5.1
+        MISSING  - -99.9
+                
+    4.  TMAX - AVERAGE DAILY MAXIMUM TEMPERATURE.
+ 
+        UNITS - DEGREES CELSIUS.
+        FORMAT - F5.1
+        MISSING - -99.9
+ 
+     5. TMIN - AVERAGE DAILY MINIMUM TEMPERATURE.
+ 
+        UNITS -  DEGREES CELSIUS.
+        FORMAT - F5.1
+        MISSING - -99.9
+ 
+     6. HMAX - THE HIGHEST MAXIMUM TEMPERATURE REPORTED DURING MONTH
+ 
+        UNITS - DEGREES CELSIUS.
+        FORMAT - F5.1
+        MISSING - -99.9
+ 
+     7. RMINL - THE LOWEST MINIMUM TEMPERATURE REPORTED DURING MONTH
+ 
+        UNITS - DEGREES CELSIUS.
+        FORMAT - F5.1
+        MISSING - -99.9
+ 
+     8. CTMEAN - THE REPORTED MONTHLY CLIMATE TEMPERATURE.
+ 
+        UNITS - DEGREES CELSIUS.
+        FORMAT - F5.1
+        MISSING - -99.9
+ 
+     9. APTMAX - AVERAGE MAXIMUM APPARENT TEMPERATURE.
+ 
+        UNITS - DEGREES CELSIUS
+        FORMAT - F5.1
+        MISSING - -99.9
+ 
+    10. WCMIN - AVERAGE MINIMUM WIND CHILL TEMPERATURE.
+ 
+        UNITS - DEGREES CELSIUS
+        FORMAT - F5.1
+        MISSING - -99.9
+ 
+    11. HMAXAPT- HIGHEST DAILY MAXIMUM APPARENT TEMPERATURE DURING MONTH
+ 
+        UNITS - DEGREES CELSIUS
+        FORMAT - F5.1
+        MISSING - -99.9
+ 
+    12. WCLMINL- LOWEST DAILY MINIMUM WIND CHILL TEMPERATURE DURING MONTH
+ 
+        UNITS - DEGREES CELSIUS
+        FORMAT - F5.1
+        MISSING - -99.9
+ 
+    13. RPCP - TOTAL REPORTED PRECIPITATION FOR MONTH.
+ 
+        UNITS -  MILLIMETERS
+        FORMAT - F7.1
+        MISSING - -99.9
+ 
+    14. EPCP - TOTAL PRECIPITATION INCLUDING ESTIMATES FOR ANY PERIODS
+                THAT REPORTED AMOUNTS WERE NOT AVAILABLE.
+ 
+        UNITS - MILLIMETERS
+        FORMAT - F7.1
+        MISSING - -99.9
+ 
+    15. CPCP - TOTAL PRECIPITATION REPORTED IN CLIMAT MESSAGE.
+        (NOTE--CLIMAT REPORTS PRECIPITATION TO THE NEAREST WHOLE
+               MILLIMETER. THE CAC USES ITS PRECIPITATION REPORTED
+               TO A TENTH WHEN THE DIFFERENCE COULD HAVE BEEN DUE
+               TO ROUNDING OF THE CLIMAT VALUE.
+ 
+        UNITS -  MILLIMETERS
+        FORMAT - F7.1
+        MISSING - -99.9
+ 
+    16. EPCPMX - MAXIMUM DAILY PRECIPITATION INCLUDING ESTIMATES.
+ 
+        UNITS -  MILLIMETERS
+        FORMAT - F5.1
+        MISSING - -99.9
+ 
+    17. AHS - AVERAGE HOURS OF SUNSHINE
+ 
+        UNITS - HOURS
+        FORMAT - F5.2
+        MISSING - -9.99
+ 
+    18. AVP - AVERAGE VAPOR PRESSURE
+ 
+        UNITS - MILLIBARS
+        FORMAT - F5.2
+        MISSING - -9.99
+ 
+    19. APET - AVERAGE PAN EVAPORTRANSPORATION
+ 
+        UNITS - MILLIMETERS
+        FORMAT - F5.2
+        MISSING - -9.99
+ 
+    20. AVPD - AVERAGE VAPOR PRESSURE DEFICIT
+ 
+        UNITS - MILLIBARS
+        FORMAT - F5.2
+        MISSING - -9.99
+ 
+    21. RSV1 - RESERVED
+ 
+        FORMAT - F6.1
+        MISSING - -99.9
+ 
+    22. TRAD - AVERAGE TOTAL RADIATION
+ 
+        UNITS -
+        FORMAT - F5.2
+        MISSING - -9.99
+ 
+    23. AMAXRH - AVERAGE MAXIMUM RELATIVE HUMIDITY.
+ 
+        UNITS - PERCENT
+        FORMAT - F5.0
+        MISSING - -999.
+ 
+    24. AMINRH - AVERAGE MINIMUM RELATIVE HUMITITY.
+ 
+        UNITS - PERCENT
+        FORMAT - F5.0
+        MISSING - 999.
+ 
+    25. IHDD - TOTAL HEATING DEGREE DAYS.
+ 
+        FORMAT - I5
+        MISSING - -999
+ 
+    26. ICDD - TOTAL COOLING DEGREE DAYS.
+ 
+        FORMAT - I5
+        MISSING - -999
+ 
+    27. IGDD - TOTAL GROWING DEGREE DAYS.
+ 
+        FORMAT - I5
+        MISSING - -999
+ 
+    28. NRADV - NUMBER OF RADIATION VALUES
+ 
+        FORMAT - I3
+        MISSING - 0
+ 
+    29. IRSV2 - RESERVED
+ 
+        FORMAT - I4
+        MISSING - 0
+ 
+    30. NOBS - NUMBER OF OBSERVATIONS
+ 
+        FORMAT - I4
+        MISSING - 0
+ 
+    31. NOBSP - NUMBER OF OBSERVATIONS WITH PRECIPITATION
+ 
+        FORMAT - I4
+        MISSING - 0
+ 
+    32. N6HE - NUMBER OF 6 HOUR PERIODS THAT PRECIPITATION ESTIMATED
+ 
+        FORMAT - I4
+        MISSING - 0
+ 
+    33. NPMXMN - NUMBER OF PAIRED MAXIMUM AND MINIMUM TEMPERATURES
+ 
+        FORMAT - I3
+        MISSING - 0
+ 
+    34. NMX - NUMBER OF DAILY MAXIMUM TEMPERATURES
+ 
+        FORMAT - I3
+        MISSING - 0
+ 
+    35. NMN - NUMBER OF DAILY MINIMUM TEMPERATURES
+ 
+        FORMAT - I3
+        MISSING - 0
+ 
+    36. MXDAT - DATE THE MAXIMUM MONTHLY TEMPERATURE OCCURRED
+ 
+        FORMAT - I8
+        MISSING - -999
+ 
+    37. MNDAT - DATE THE MINIMUM MONTHLY TEMPERATURE OCCURRED
+ 
+        FORMAT - I8
+        MISSING - -999
+ 
+    38. NDPR - DAYS MEASURABLE PRECIPITATION REPORTED
+	       [apparently includes days with a trace and days
+		with zero precip as evidenced by NDPR being
+		almost always equal to the days in the month;
+		so essentially is a count of days with non-missing
+		precip amount]
+ 
+        FORMAT - I3
+        MISSING - 0
+ 
+    39. NDTPR - NUMBER OF DAYS A TRACE OF PRECIPITATION REPORTED
+ 
+        FORMAT - I3
+        MISSING - 0
+ 
+    40. NMAPT - NUMBER OF DAILY MAXIMUM  APPARENT TEMPERATURES
+ 
+        FORMAT - I3
+        MISSING - 0
+ 
+    41. NMWC - NUMBER OF DAILY MINIMUM WIND CHILL VALUES
+ 
+        FORMAT - I3
+        MISSING - 0
+ 
+    42. NSV - NUMBER OF DAILY SUNSHINE VALUES
+ 
+        FORMAT - I3
+        MISSING - 0
+ 
+    43. NVPT - NUMBER OF DAILY VAPOR PRESSURE VALUES
+ 
+        FORMAT - I3
+        MISSING - 0
+ 
+    44. NPET - NUMBER OF DAILY PAN EVAPORATION VALUES
+ 
+        FORMAT - I3
+        MISSING - 0
+ 
+    45. NMXRH - NUMBER OF DAILY MAXIMUM RELATIVE HUMIDITY VALUES
+ 
+        FORMAT - I3
+        MISSING - 0
+ 
+    46. NMNRH - NUMBER OF DAILY MINIMUM RELATIVE HUMIDITY VALUES
+ 
+        FORMAT - I3
+        MISSING - 0
+ 
+    47. MXAPTD - DATE MONTHLY MAXIMUM APPARENT TEMPERATURE OCCURRED
+ 
+        FORMAT - I8
+        MISSING - -999
+ 
+    48. MNWCD - DATE MONTHLY MINIMUM WIND CHILL OCCURRED
+ 
+        FORMAT - I8
+        MISSING - -999
+ 
+    49  MXPCPD - DATE THE MAXIMUM DAILY PRECIPITATION OCCURRED
+ 
+        FORMAT - I8
+        MISSING - -999
+ 
+    50  NDAYS - NUMBER OF DAYS IN THE MONTH
+ 
+        FORMAT - I3
+ 
+ 
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+
+                  Definitions of various parameters
+
+Climat temperature is the final corrected monthly mean temperature reported 
+by a station.
+                                  
+
+Apparent temperature is an equivalent temperature that measures the degree 
+of human discomfort due to combined heat and humidity.  It is based on studies
+of human physiology and textile (clothing) science.  The apparent temperature
+is designed so that it exceeds the air temperature when humidity is relatively
+high.  The apparent temperature does not consider the effects of air
+movement (wind speed) or exposure to sunshine.  
+
+
+Wind chill is an equivalent temperature that measure the degree of physical 
+discomfort and stress from combined cold and wind.  It was developed from
+physiological studies of the of the rate of heat loss for various combinations
+of ambient temperature and wind speed. The wind chill equals the air
+temperature when the wind speed is 4 MPH or less.  At higher wind speeds, the
+wind chill is lower than the air temperature and measures the
+increased rate of heat loss from the body under windy conditions. 
+
+
+Pan evaporation is the amount of moisture which is transformed from water to 
+vapor as measured in a cylindrical pan (class-A pan) with a depth of ten
+inches and a diameter of forty-eight inches.  The pan is filled with water
+to a depth of eight inches and periodically measured.  When the water level 
+drops to seven, the pan is refilled.
+ 
+
+Total radiation is the sum of direct solar radiation also known as the beam
+component and scattered radiation.  Direct radiation is beamed straight from
+the sun to the earth with no deviation, while scattered radiation takes a less
+direct route from sun to earth.
+
+
+Vapor pressure deficit is the difference between the saturation vapor pressure
+and the actual vapor pressure.
+ 
+
+A heating degree day is an index used to quantify the amount of heating 
+required for houses or businesses for a given day.  Heating degree days for a
+given period are the summations of negative differences between the mean daily
+temperature (F) and the base temperature of 65F for that period.
+The  heating year  extends from July 1 to June 30.
+ 
+
+A cooling degree day is an index used to quantify the amount of cooling 
+required for houses or businesses for a given day.  Cooling degree days
+for a given period are the summations of positive differences between the
+mean daily temperature (F) and the base temperature of 65F for that period.
+The cooling year  extends from January 1 to December 31.
+
+ 
+A growing degree day is an index used to express crop maturity.  Growing 
+degree days for a given period are the summations of the positive
+differences between the mean daily temperature (F) and the base temperature
+of 50F for that period.  Temperatures above 86F are set equal to 86.  
+The  growing  season  extends from March 1 to November 2.

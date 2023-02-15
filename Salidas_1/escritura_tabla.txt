@@ -1,0 +1,25 @@
+ESTACIONES LONGITUD LATIUD NOMBRE CLASIFICACION
+87623 -64.2 -36.3 santa Rosa Aero C f a
+87645 -59.2 -37.1 Tandil Aero C f a
+87648 -57.4 -36.21 Dolores Aero C f a
+87649 -59.5 -37.4 Benito Juarez Aero C w a
+87688 -60.2 -38.2 Tres Arroyos C f a
+87692 -57.4 -37.5 Mar del Plata Aero C f a
+87715 -68.1 -38.5 Neuquen Aero B S h
+87750 -62.1 -38.4 Bahia Blanca Aero C f a
+87761 -71.1 -40 Chapelco Aero B S h
+87765 -71.1 -41 Bariloche Aero C s a
+87774 -68.4 -41.1 Maquinchao D f a
+87784 -65.1 -40.4 San Antonio Oeste Aero B S h
+87791 -63 -40.5 Viedma Aero C f a
+87803 -71.1 -42.6 Esquel Aero C s a
+87814 -68.5 -43.5 Paso de los indios B S h
+87828 -65.2 -43.1 Trelew Aero B S h
+87852 -71 -46.3 Perito Moreno Aero B S h
+87860 -67.3 -45.5 Comodoro Rivadavia Aero C s a
+87880 -70.1 -48.5 Gobernador Gregores Aero C f b
+87896 -66 -47.4 Puerto Deseado Aero B S h
+87909 -67.5 -49.2 San Julian Aero C f b
+87925 -69.2 -51.4 Rio Gallegos Aero C f b
+87934 -67.5 -53.5 Rio Grande B.A. C f c
+87938 -68.2 -54.5 Ushuaia Aero C f c
