@@ -12,5 +12,5 @@
 
 📌En un archivo JPG se encuentran las instrucciones de clasificacion.
 
-📌En Salidas_1 se encuentran los archivos generados (panel, data.frame, mapa).
+📌En Salidas_1 se encuentran los archivos generados (panel, ASCII, mapa).
 
