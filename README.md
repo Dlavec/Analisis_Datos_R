@@ -7,3 +7,9 @@
 
 ## Analisis_de_Datos_Rstudio
 1. Data set txt - Clasificación climática de estaciones argentinas
+
+-Notar que se cuenta con 2 archivos txt: Uno contiene el FORMATO de los datos y otro contiene los datos.
+
+-En un archivo JPG se encuentran las instrucciones de clasificacion.
+
+-En Salidas_1 se encuentran los archivos generados (panel, data.frame, mapa).
